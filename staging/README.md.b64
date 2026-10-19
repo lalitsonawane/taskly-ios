@@ -1,0 +1,31 @@
+# Taskly
+
+Personal task manager for iOS - lists, due dates, priority, and search. Built with **SwiftUI + SwiftData** (iOS 17+). No accounts, no backend.
+
+## Features (MVP)
+
+- **Today** - overdue + due today, checkbox complete with haptic, swipe to delete or reschedule to tomorrow
+- **Lists** - seeded **Inbox** (non-deletable) + create / rename / delete your own lists
+- **Search** - filter by title or notes across all tasks
+- **Tasks** - title, notes, optional due date, priority (none / low / medium / high), list membership
+- Light-first UI with a soft teal accent, SF Symbols only, Dynamic Type-friendly rows
+
+## Requirements
+
+- macOS with **Xcode 15+** (iOS 17 SDK)
+- [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`)
+
+Cloud agents author sources + `project.yml`; you generate the `.xcodeproj` on your Mac.
+
+## Open in Xcode
+
+```bash
+git clone https://github.com/lalitsonawane/taskly-ios.git
+cd taskly-ios
+git checkout lalit_cursor/taskly-mvp-9dad   # or main once merged
+
+# Generate the Xcode project (required once, or after project.yml changes)
+xcodegen generate
+
+open Taskly.xcodeproj
+```
