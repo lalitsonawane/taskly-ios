@@ -1,2 +1,3 @@
-# taskly-ios
-Taskly — personal SwiftUI + SwiftData task app (iOS 17+)
+# Taskly
+
+Personal SwiftUI + SwiftData task app for iOS 17+.
