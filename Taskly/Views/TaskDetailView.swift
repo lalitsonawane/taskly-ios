@@ -68,13 +68,13 @@ struct TaskDetailView: View {
                 }
 
                 Section {
-                     Button(role: .destructive) {
+                    Button(role: .destructive) {
                         modelContext.delete(task)
                         HapticFeedback.warning()
                         dismiss()
                     } label: {
                         Label("Delete Task", systemImage: "trash")
-                   }
+                    }
                 }
             }
             .scrollContentBackground(.hidden)
